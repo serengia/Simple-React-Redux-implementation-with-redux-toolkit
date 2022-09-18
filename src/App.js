@@ -11,7 +11,7 @@ function App() {
       <Header />
       {!auth && <Auth />}
       {auth && <UserProfile />}
-      <Counter />
+      {auth && <Counter />}
     </>
   );
 }
